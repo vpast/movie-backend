@@ -7,7 +7,7 @@ const CommentController = require("./controller/Comment")
 const MovieController = require("./controller/Movie")
 const express = require('express');
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001
 
 app.use(cors());
 app.use(express.static('public'));
