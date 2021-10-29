@@ -3,7 +3,7 @@ const MovieComment = require("../model/mongo/MovieComment")
 
 const list = async (req, res, next) => {
   try {
-    const { skip = 0, limit = 5, similar, archive, genre, year } = req.query;
+    const { skip = 0, limit = 5, similar, start_year, end_year, genre, year } = req.query;
     const criteria = {}
     const sort = {}
     if (similar) {
@@ -14,11 +14,16 @@ const list = async (req, res, next) => {
       }
       criteria._id = {$ne:similar}
     }
-    if (archive) {
+    if (start_year) {
       criteria.year= {
-        $gte: 2000,
-        $lte: 2016
+        $gte: start_year,
       }
+    }
+    if (end_year) {
+      if (!criteria.year) {
+        criteria.year = {}
+      }
+      criteria.year.$lte = end_year
     }
     if (genre) {
       criteria.genres=genre
