@@ -5,7 +5,6 @@ const CONNECTION =
 mongoose.connect(CONNECTION, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  dbName: 'movie_catalog_backend'
 });
 
 // mongodb://127.0.0.1:27017/movie_catalog_backend
