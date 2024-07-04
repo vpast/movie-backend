@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
-const CONNECTION =
-  process.env.CONNECTION || 'mongodb://moviesdb:2b0e4222c799a6326f749c9a7984ce6f@dokku-mongo-moviesdb:27017/moviesdb';
+const CONNECTION = process.env.CONNECTION || 'mongodb://localhost:27017/movies';
 
-mongoose.connect(CONNECTION, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+
+mongoose.set('debug', true);
+
+mongoose.connect(CONNECTION, {});
 
 // mongodb://127.0.0.1:27017/movie_catalog_backend
