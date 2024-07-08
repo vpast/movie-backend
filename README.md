@@ -4,13 +4,15 @@ Movie catalog made with React.js, Node.js and MongoDB. See the frontend part [in
 # Demo version
 You can check this project on my own site {PLACE SITE URL HERE}, but if it turned off for some reason, you can try to launch it localy on your PC, following my instruction below.
 
+![Memico2](https://i.imgur.com/LRDSjT9.gif)
+
 # How to run
 
-Package update
+### Package update
 
 To run this project, you will need to download 2 repositories, [frontend](https://github.com/vpast/movie_catalog_frontend) and [backend](https://github.com/vpast/movie_catalog_backend). Then, when you have done it, set up packages that will need to launch using ```npm i ``` in terminal.
 
-Database setup
+### Database setup
 
 You will need to start mongoDB server on your local machine, to work project properly. For this, i will recomend [MongoDB Compass](https://www.mongodb.com/try/download/shell) for UI controll and [MongoDB Community Server](https://www.mongodb.com/try/download/community) for your local database server.
 
@@ -24,7 +26,6 @@ In MongoDB Compass you will need to create new database called **movies**, remem
 
 Then click on plus and create two collections **movies** and **comments**
 In this collections, click on add data -> import JSON or CSV file, then select json file. After you add json data to your database, it will looks like this
-
 ![moviesDatabase](https://i.imgur.com/ZXN9cM2.png)
 
 Do this to **comments** file too.
@@ -58,7 +59,7 @@ In VS Code i separate terminal to two and working. Left, will be frontend and ri
 ```npm run build``` then ```npm start``` it will start your frontend part.
 Then in backend terminal type ```npm start```.
 
-After all or this you can try to follow your url there you start your frontend, for me it will be http://localhost:3000
+After all or this you can try to follow your url, there you open your frontend, for me it will be http://localhost:3000
 
 All right, that's all. I hope your demo version of project now live!
 
