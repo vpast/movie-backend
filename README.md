@@ -26,6 +26,7 @@ In MongoDB Compass you will need to create new database called **movies**, remem
 
 Then click on plus and create two collections **movies** and **comments**
 In this collections, click on add data -> import JSON or CSV file, then select json file. After you add json data to your database, it will looks like this
+
 ![moviesDatabase](https://i.imgur.com/ZXN9cM2.png)
 
 Do this to **comments** file too.
