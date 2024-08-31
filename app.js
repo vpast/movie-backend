@@ -12,6 +12,8 @@ const PORT = process.env.PORT || 3001
 app.use(cors());
 app.use(express.static('public'));
 
+app.get('/', (req, res) => res.send("Welcome to Express"))
+
 // Users
 app.get('/users', UserController.list);
 
@@ -51,3 +53,5 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server app listening at http://localhost:${PORT}`);
 });
+
+module.exports = app;
