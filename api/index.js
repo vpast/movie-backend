@@ -1,10 +1,10 @@
 require("dotenv").config()
-require("./model/mongo/db")
+require("../model/mongo/db")
 const cors = require("cors")
-const UserController = require("./controller/User")
-const PostController = require("./controller/Post")
-const CommentController = require("./controller/Comment")
-const MovieController = require("./controller/Movie")
+const UserController = require("../controller/User")
+const PostController = require("../controller/Post")
+const CommentController = require("../controller/Comment")
+const MovieController = require("../controller/Movie")
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3001
