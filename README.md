@@ -2,7 +2,7 @@
 Movie catalog made with React.js, Node.js and MongoDB. See the frontend part [in a separate repository](https://github.com/vpast/movie_catalog_frontend). The catalog allows to browse through over 24,000 movies with the ability to filter them by genre and year. The home page shows five random movies at random and can be refreshed to get another five. The "Movies" page is the main access to the catalog, with filters and pagination on it. The "Archives" page has a slightly different functionality: it allows to select two years and see the movies that were released in the time period between them.
 
 # Demo version
-You can check this project on my own site {PLACE SITE URL HERE}, but if it turned off for some reason, you can try to launch it localy on your PC, following my instruction below.
+You can check this project on [Vercel](https://movie-catalog-frontend-tau.vercel.app/), but if it turned off for some reason, you can try to launch it localy on your PC, following my instruction below.
 
 ![Memico2](https://i.imgur.com/LRDSjT9.gif)
 
