@@ -16,17 +16,21 @@ You can find the backend part [in a separate repository](https://github.com/vpas
 - Node.js  
 - MongoDB  
 
-# Demo version
+## Demo version
 You can check this project on [Vercel](https://movie-catalog-frontend-tau.vercel.app/), but if it turned off for some reason, you can try to launch it localy on your PC, following my instruction below.
 
-![Memico2](https://i.imgur.com/LRDSjT9.gif)
+![Memico2](https://i.imgur.com/fP9UMEr.gif)
 
-# How to run
+## Installation and Usage  
 
-### Package update
+### Prerequisites  
+To run this project locally, you will need to clone both the [frontend](https://github.com/vpast/movie_catalog_frontend) and [backend](https://github.com/vpast/movie_catalog_backend) repositories.  
 
-To run this project, you will need to download 2 repositories, [frontend](https://github.com/vpast/movie_catalog_frontend) and [backend](https://github.com/vpast/movie_catalog_backend). Then, when you have done it, set up packages that will need to launch using ```npm i ``` in terminal.
-
+### Package Installation  
+Navigate to each project directory and install the necessary dependencies:  
+```bash
+npm install
+```
 ### Database setup
 
 You will need to start mongoDB server on your local machine, to work project properly. For this, i will recomend [MongoDB Compass](https://www.mongodb.com/try/download/shell) for UI controll and [MongoDB Community Server](https://www.mongodb.com/try/download/community) for your local database server.
@@ -45,6 +49,8 @@ In this collections, click on add data -> import JSON or CSV file, then select j
 ![moviesDatabase](https://i.imgur.com/ZXN9cM2.png)
 
 Do this to **comments** file too.
+
+### Configuration
 
 Ok! Now we going to code.
 
@@ -67,15 +73,35 @@ mongoose.connect(CONNECTION,  {});
 
 If you don't have or created .env file, change second connection variant to your mongoDB URL. Default connection to mongoDB will be ```mongodb://localhost:27017```, if i am right. Also dont forget to type path to your **model**, like this ```/movies```, remember, **model** not **collection**. This two step's are very important.
 
+### Running the Application
+
 Ok, now the last part. You can launch project like i do or how would you like, for me it will be like that.
 
 ![vsCodeTerminal](https://i.imgur.com/91dX9gt.png)
 
-In VS Code i separate terminal to two and working. Left, will be frontend and right will be backend. For frontend you will need type next commands
-```npm run build``` then ```npm start``` it will start your frontend part.
-Then in backend terminal type ```npm start```.
+Open two terminals (or split your terminal in VS Code).
 
-After all or this you can try to follow your url, there you open your frontend, for me it will be http://localhost:3000
+1.  In the frontend directory:
+    
+    ```bash
+    npm run build
+    npm start
+    
+    ```
+    
+    This will start the frontend on `http://localhost:3000`.
+    
+2.  In the backend directory:
+    
+    ```bash
+    npm start
+    
+    ```
+    
+
+### Accessing the App
+
+Open your browser and go to `http://localhost:3000` to access the application.
 
 All right, that's all. I hope your demo version of project now live!
 
@@ -83,10 +109,14 @@ All right, that's all. I hope your demo version of project now live!
 
 Here are some action shots from the app:
 
-![Memico1](https://i.imgur.com/DeKMjg5.gif)
+![Memico1](https://i.imgur.com/Ge7Lb1A.gif)
 
-![Memico2](https://i.imgur.com/LRDSjT9.gif)
+![Memico2](https://i.imgur.com/fP9UMEr.gif)
 
-![Memico3](https://i.imgur.com/By3COM6.gif)
+![Memico3](https://i.imgur.com/vbk0JrC.gif)
 
-![Memico4](https://i.imgur.com/Sk8L4Rn.gif)
+![Memico4](https://i.imgur.com/lBDrkZV.gif)
+
+----------
+
+Feel free to contribute to this project or report any issues!
