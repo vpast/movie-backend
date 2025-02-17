@@ -1,5 +1,20 @@
+# Movie Catalog  
 
-Movie catalog made with React.js, Node.js and MongoDB. See the frontend part [in a separate repository](https://github.com/vpast/movie_catalog_frontend). The catalog allows to browse through over 24,000 movies with the ability to filter them by genre and year. The home page shows five random movies at random and can be refreshed to get another five. The "Movies" page is the main access to the catalog, with filters and pagination on it. The "Archives" page has a slightly different functionality: it allows to select two years and see the movies that were released in the time period between them.
+Movie Catalog is a web application made with React.js, Node.js, and MongoDB. It allows users to browse through over 24,000 movies with the ability to filter them by genre and year. The homepage shows five random movies, which can be refreshed for another selection. The "Movies" page provides filters and pagination, while the "Archives" page allows users to select a time period to see movies released within that range.  
+
+You can find the backend part [in a separate repository](https://github.com/vpast/movie_catalog_frontend.git).  
+
+## Features  
+- Browse through a catalog of over 24,000 movies  
+- Filter movies by genre and year  
+- Random movie suggestions on the homepage  
+- Pagination and advanced filtering on the "Movies" page  
+- Archives view to explore movies by release date range  
+
+## Technologies Used  
+- React.js  
+- Node.js  
+- MongoDB  
 
 # Demo version
 You can check this project on [Vercel](https://movie-catalog-frontend-tau.vercel.app/), but if it turned off for some reason, you can try to launch it localy on your PC, following my instruction below.
@@ -65,7 +80,8 @@ After all or this you can try to follow your url, there you open your frontend, 
 All right, that's all. I hope your demo version of project now live!
 
 # Screenshot's
-For people, who want to see some action here, i will drop some gif's.
+
+Here are some action shots from the app:
 
 ![Memico1](https://i.imgur.com/DeKMjg5.gif)
 
