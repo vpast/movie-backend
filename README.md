@@ -116,7 +116,3 @@ Here are some action shots from the app:
 ![Memico3](https://i.imgur.com/vbk0JrC.gif)
 
 ![Memico4](https://i.imgur.com/lBDrkZV.gif)
-
-----------
-
-Feel free to contribute to this project or report any issues!
